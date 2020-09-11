@@ -1,0 +1,26 @@
+SET FOREIGN_KEY_CHECKS= 0;
+DROP TABLE IF EXISTS Customer 
+CREATE TABLE Customer
+(
+   `id` int (11) NOT NULL AUTO_INCREMENT,
+   `name` varchar (30) NOT NULL,
+   `address` varchar (50) NOT NULL,
+   
+    PRIMARY KEY (id)
+)
+ENGINE= InnoDB AUTO_INCREMENT= 85 DEFAULT CHARSET= utf8;
+
+DROP TABLE IF EXISTS Product 
+CREATE TABLE `Product` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`productName` VARCHAR(100) NOT NULL,
+	`quantity` INT(11) NOT NULL DEFAULT,
+	`price` INT(11) NOT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=2
+;
+
+ENGINE= InnoDB AUTO_INCREMENT= 1 DEFAULT CHARSET= utf8;
